@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>METHOD AND EVENTS</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="vue.global.js"></script>
+</head>
+<body>
+	<header> VUE.JS - METHOD AND EVENTS </header>
+	<div id="app">
+		<center>
+		<h2>Count: {{count}}</h2>
+		<button v-on:click="increase">Increment</button>
+		<button @click="count = count-1">Decrement</button>
+		<button @click="reset">Reset</button>
+		<hr>
+		<h2>Count: {{count2}}</h2>
+		<button v-on:click="increase2">Increment 2</button>
+		<button @click="decrease2">Decrement 2</button>
+		<button @click="reset2">Reset</button>
+		</center>
+	</div>
+<script src="main.js"></script>
+</body>
+</html>
